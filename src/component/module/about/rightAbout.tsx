@@ -7,7 +7,7 @@ function RightAbout() {
                 </button>
             </div>
             <div className="w-[80%]">
-                <img src="../public/images/siam.jpg" alt="photo" className="w-[70%] rounded-2xl hover:scale-102 hover:rotate-15 md:hover:scale-105 md:hover:rotate-30 transition duration-300 ease " />
+                <img src="/public/images/siam.jpg" alt="photo" className="w-[70%] rounded-2xl hover:scale-102 hover:rotate-15 md:hover:scale-105 md:hover:rotate-30 transition duration-300 ease " />
             </div>
         </div>
     </>
