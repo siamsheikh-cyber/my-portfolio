@@ -27,7 +27,7 @@ function RightContact() {
                     <FaGithub className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                     <IoLogoLinkedin className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                     <FaSquareInstagram className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
-                    <TiSocialFacebookCircular className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    <TiSocialFacebookCircular className="hidden sm:block bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                 </div>
             </div>
             <div>
