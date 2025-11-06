@@ -6,8 +6,14 @@ export default function RightHero({
     skills = [
         "Tailwind CSS",
         "JavaScript",
+        "TypeScript",
         "React",
         "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Git/GitHub",
     ],
 }) {
     return (

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 import { MdFacebook } from "react-icons/md";
@@ -14,7 +14,7 @@ export default function HeroText() {
 
     useEffect(() => {
         const currentText = texts[textIndex];
-        const speed = forward ? 150 : 80; // টাইপ স্পিড ও ডিলিট স্পিড
+        const speed = forward ? 150 : 80;
 
         const timer = setTimeout(() => {
             if (forward) {
@@ -52,7 +52,6 @@ export default function HeroText() {
                     I'm a Professional
                 </h1>
 
-                {/* নিচের লাইন টাইপিং অ্যানিমেশন */}
                 <h1 className=" text-[#16F2B3] text-[25px] md:text-[34px] lg:text-[40px]">
                     {display}
                     <span className="animate-pulse">_.</span>
@@ -64,17 +63,18 @@ export default function HeroText() {
                 <a href="https://github.com/siamsheikh-cyber"><FaGithub className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
                 <a href="https://www.linkedin.com/in/ss-aa-98916737b/"><FaLinkedin className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
                 <a href="https://www.facebook.com/share/1FbG5cs9xn/"><MdFacebook className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
-                <a href=""><FaSquareInstagram className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
+                <a href="https://www.instagram.com/sheikhsiam36/"><FaSquareInstagram className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
             </div>
 
             {/* Buttons */}
             <div className="flex gap-3.5 mt-15  md:mt-10">
-                <button className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3 border border-[#E8489C] border-gradient-r from-green-500 to-red-600 rounded-lg text-white font-semibold 
+                <a href="https://wa.me/8801790829850?text=Hi%20Siam%2C%20I%27m%20interested%20in%20your%20work!">
+                    <button className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3 border border-[#E8489C] border-gradient-r from-green-500 to-red-600 rounded-lg text-white font-semibold 
                      hover:border-[#E8489C]
                      transition-all duration-300 transform hover:scale-x-105 hover-gap-3 origin-left">
-                    Contact me <BsFillPersonLinesFill />
-                </button>
-
+                        Contact me <FaWhatsapp />
+                    </button>
+                </a>
                 <button className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3  rounded-lg text-white font-semibold bg-gradient-to-r from-[#863BE6] to-[#E8489C]
                      hover:from-[#E8489C] hover:to-[#863BE6] hover-gap-3 
                      transition-all duration-300 transform hover:scale-x-105 origin-left">
