@@ -4,10 +4,10 @@
 export default function RightHero({
     name = "Sheikh Siam",
     skills = [
+        "Tailwind CSS",
         "JavaScript",
         "React",
-        "Tailwind CSS",
-        "Figma",
+        "Next.js",
     ],
 }) {
     return (

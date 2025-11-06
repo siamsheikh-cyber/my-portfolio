@@ -8,8 +8,8 @@ import { TiSocialFacebookCircular } from "react-icons/ti"
 
 function RightContact() {
     return <>
-        <div className="lg:w-[50%] flex items-start">
-            <div className=" lg:pl-20 pt-30">
+        <div className="md:w-[50%] flex items-start">
+            <div className=" md:pl-20 md:pt-30">
                 <div className="flex gap-5 mb-7 items-center ">
                     <MdOutlineAlternateEmail className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
 
@@ -27,7 +27,7 @@ function RightContact() {
                     <FaGithub className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                     <IoLogoLinkedin className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                     <FaSquareInstagram className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
-                    <TiSocialFacebookCircular className="hidden sm:block bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    <TiSocialFacebookCircular className="hidden sm:block md:hidden lg:block bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                 </div>
             </div>
             <div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 import { IoMdDownload } from "react-icons/io";
 import { MdFacebook } from "react-icons/md";
 
@@ -60,10 +61,10 @@ export default function HeroText() {
 
             {/* Social Links */}
             <div className="flex items-center gap-5 mt-[25px]">
-                <FaGithub className="cursor-pointer text-[30px] text-[#EC4899]" />
-                <FaLinkedin className="cursor-pointer text-[30px] text-[#EC4899]" />
-                <MdFacebook className="cursor-pointer text-[30px] text-[#EC4899]" />
-                <FaTwitterSquare className="cursor-pointer text-[30px] text-[#EC4899]" />
+                <a href="https://github.com/siamsheikh-cyber"><FaGithub className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
+                <a href="https://www.linkedin.com/in/ss-aa-98916737b/"><FaLinkedin className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
+                <a href="https://www.facebook.com/share/1FbG5cs9xn/"><MdFacebook className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
+                <a href=""><FaSquareInstagram className="cursor-pointer text-[30px] text-[#EC4899]" /></a>
             </div>
 
             {/* Buttons */}

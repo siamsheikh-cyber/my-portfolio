@@ -5,13 +5,13 @@ function Mainheader() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="bg-[#0D1224] w-full">
+        <header className="bg-[#0D1224] w-full fixed">
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
 
                     {/* Logo */}
                     <div className="text-[25px] sm:text-[30px] text-[#16F2B3] font-bold cursor-pointer">
-                        <a href="http://localhost:5174/" >
+                        <a href="#hero" >
 
                             SIAM SHEIKH
                         </a>

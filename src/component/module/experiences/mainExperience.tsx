@@ -8,7 +8,7 @@ function MainExperience() {
                 EXPERIENCES <span className="hidden sm:block absolute top-[20px] right-32.5 bg-white w-55 h-[1px] animated-line"></span>
                 <span className="hidden sm:block absolute top-[20px] left-32.5 bg-white w-55 h-[1px] animated-line"></span>
             </button>
-            <div className="flex mt-30">
+            <div className="flex mt-15 sm:mt-30">
                 <LeftExperience />
                 <RightExperience />
             </div>

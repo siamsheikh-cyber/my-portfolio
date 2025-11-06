@@ -14,7 +14,7 @@ function RightExperience() {
                 </div>
             </div>
 
-            <div className="glow-border  py-7  px-5 sm:px-15">
+            <div className="glow-border py-7 px-5 sm:px-15">
                 <h3 className="text-center text-[#1DD8AD]">(Jun 2023 - Present)</h3>
                 <div className="flex items-center gap-7 mt-2.5">
                     <FaUserGraduate className="text-4xl text-[#8B5BF6]" />

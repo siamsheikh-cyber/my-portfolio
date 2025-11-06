@@ -3,7 +3,7 @@ import RightContact from "./rightContact"
 
 function MainContact() {
     return <>
-        <div id="contact" className="bg-[#0D1224] pb-20 pt-20 lg:px-8 text-white overflow-hidden border-y-[1px] border-transparent px-8 [border-image:linear-gradient(to_right,#0D1224,#9ca3af,#0D1224)_1] flex flex-col lg:flex-row">
+        <div id="contact" className="bg-[#0D1224] pb-20 pt-20 lg:px-8 text-white overflow-hidden border-y-[1px] border-transparent px-8 [border-image:linear-gradient(to_right,#0D1224,#9ca3af,#0D1224)_1] flex flex-col-reverse md:flex-row">
             <LeftContact />
             <RightContact />
         </div>
