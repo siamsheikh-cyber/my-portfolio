@@ -41,10 +41,10 @@ export default function HeroText() {
     return (
         <motion.section
             className="bg-[#0D1224] pt-0 sm:pt-9"
-            initial={{ opacity: 0, x: -100 }} // শুরুতে left দিক থেকে
-            whileInView={{ opacity: 1, x: 0 }} // viewport এ এলে visible
-            transition={{ duration: 0.8, ease: "easeOut" }} // smooth transition
-            viewport={{ once: true, amount: 0.3 }} // একবারই চলবে
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
         >
             <div className="text-[30px] pt-13 sm:pt-0 leading-[46px] sm:text-[40px] sm:leading-[56px] font-bold text-white">
                 <h1>Hello,</h1>

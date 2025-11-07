@@ -18,10 +18,10 @@ export default function RightHero({
 }) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 150 }}      // শুরুতে right থেকে বাইরে
-            whileInView={{ opacity: 1, y: 0 }}    // scroll এ আসলে দৃশ্যমান
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}             // একবারই animate হবে
+            viewport={{ once: true }}
             className="w-[250px] sm:w-fit md:w-full mx-auto pt-7"
         >
             {/* Window shell */}

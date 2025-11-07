@@ -19,7 +19,7 @@ function RightContact() {
                 <div className="flex gap-5 mb-7 items-center ">
                     <a href="tel:+8801339539820"> <BiSolidPhoneCall className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
                     </a>
-                    <h1 className="text-1xl">+8801339539820</h1>
+                    <h1 className="text-1xl custom-font">+8801339539820</h1>
                 </div>
                 <div className="flex gap-5 items-center ">
                     <a href="https://maps.app.goo.gl/DKuEnmvjG9r1ixTX9?g_st=ac">
