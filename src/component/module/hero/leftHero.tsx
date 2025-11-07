@@ -46,7 +46,7 @@ export default function HeroText() {
             transition={{ duration: 0.8, ease: "easeOut" }} // smooth transition
             viewport={{ once: true, amount: 0.3 }} // একবারই চলবে
         >
-            <div className="text-[30px] leading-[46px] sm:text-[40px] sm:leading-[56px] font-bold text-white">
+            <div className="text-[30px] pt-13 sm:pt-0 leading-[46px] sm:text-[40px] sm:leading-[56px] font-bold text-white">
                 <h1>Hello,</h1>
                 <h1>
                     This is <span className="text-[#EC4899]">SIAM SHEIKH</span>,
