@@ -11,23 +11,31 @@ function RightContact() {
         <div className="md:w-[50%] flex items-start">
             <div className=" md:pl-20 md:pt-30">
                 <div className="flex gap-5 mb-7 items-center ">
-                    <MdOutlineAlternateEmail className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
-
+                    <a href="mailto:siamthecoder@gmail.com">
+                        <MdOutlineAlternateEmail className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
                     <p className="text-1xl">siamthecoder@gmail.com</p>
                 </div>
                 <div className="flex gap-5 mb-7 items-center ">
-                    <BiSolidPhoneCall className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    <a href="tel:+8801339539820"> <BiSolidPhoneCall className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
                     <h1 className="text-1xl">+8801339539820</h1>
                 </div>
                 <div className="flex gap-5 items-center ">
-                    <LuMapPin className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    <a href="https://maps.app.goo.gl/DKuEnmvjG9r1ixTX9?g_st=ac">
+                        <LuMapPin className="bg-gray-500  cursor-pointer text-[45px] text-black p-3 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
                     <p className="text-1xl">DHAKA, BANGLADESH</p>
                 </div>
                 <div className="flex flex-wrap gap-10 mt-13">
-                    <FaGithub className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
-                    <IoLogoLinkedin className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
-                    <FaSquareInstagram className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
-                    <TiSocialFacebookCircular className="hidden sm:block md:hidden lg:block bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    <a href="https://github.com/siamsheikh-cyber"><FaGithub className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/ss-aa-98916737b/"><IoLogoLinkedin className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
+                    <a href="https://www.facebook.com/share/1FbG5cs9xn/"><TiSocialFacebookCircular className="bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
+                    <a href="https://www.instagram.com/sheikhsiam36/"><FaSquareInstagram className="hidden sm:block md:hidden lg:block bg-gray-500  cursor-pointer text-[65px] text-black p-5 rounded-full hover:bg-[#16F2B3] hover:scale-105 transition-all duration-300" />
+                    </a>
                 </div>
             </div>
             <div>
