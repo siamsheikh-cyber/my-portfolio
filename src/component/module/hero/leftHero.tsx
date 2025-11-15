@@ -68,40 +68,75 @@ export default function HeroText() {
                 viewport={{ once: true }}
             >
                 <a href="https://github.com/siamsheikh-cyber">
-                    <FaGithub className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    <motion.div
+                        initial={{ y: -30, opacity: 0 }}       // Top থেকে start
+                        whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <FaGithub className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    </motion.div>
                 </a>
                 <a href="https://www.linkedin.com/in/ss-aa-98916737b/">
-                    <FaLinkedin className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    <motion.div
+                        initial={{ y: -30, opacity: 0 }}       // Top থেকে start
+                        whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <FaLinkedin className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    </motion.div>
                 </a>
                 <a href="https://www.facebook.com/share/1FbG5cs9xn/">
-                    <MdFacebook className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    <motion.div
+                        initial={{ y: -30, opacity: 0 }}       // Top থেকে start
+                        whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <MdFacebook className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    </motion.div>
                 </a>
                 <a href="https://www.instagram.com/sheikhsiam36/">
-                    <FaSquareInstagram className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    <motion.div
+                        initial={{ y: -30, opacity: 0 }}       // Top থেকে start
+                        whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <FaSquareInstagram className="cursor-pointer text-[30px] text-[#EC4899]" />
+                    </motion.div>
+
                 </a>
             </motion.div>
 
             {/* Buttons */}
-            <motion.div
+            <div
                 className="flex gap-3.5 mt-15 md:mt-10"
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true }}
+
             >
                 <a href="https://wa.me/8801790829850?text=Hi%20Siam%2C%20I%27m%20interested%20in%20your%20work!">
-                    <button className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3 border border-[#E8489C] rounded-lg text-white font-semibold 
-            hover:border-[#E8489C]
-            transition-all duration-300 transform hover:scale-x-105 origin-left">
-                        Contact me <FaWhatsapp />
-                    </button>
+                    <motion.div
+                        initial={{ y: -50, opacity: 0 }}       // Top থেকে start
+                        whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <button className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3 border border-[#E8489C] rounded-lg text-white font-semibold 
+                    hover:border-[#E8489C]
+                    transition-all duration-300 transform hover:scale-x-105 origin-left">
+                            Contact me <FaWhatsapp />
+                        </button>
+                    </motion.div>
                 </a>
-                <button className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#863BE6] to-[#E8489C]
-          hover:from-[#E8489C] hover:to-[#863BE6] 
-          transition-all duration-300 transform hover:scale-x-105 origin-left">
+                <button
+                    className="flex gap-1.5 w-[130px] sm:w-fit items-center cursor-pointer uppercase px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#863BE6] to-[#E8489C]
+                hover:from-[#E8489C] hover:to-[#863BE6] 
+                transition-all duration-300 transform hover:scale-x-105 origin-left"
+                >
                     Get Resume <IoMdDownload />
                 </button>
-            </motion.div>
+            </div>
         </motion.section>
     );
 }

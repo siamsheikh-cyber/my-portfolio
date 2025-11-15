@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function BottomSkills() {
     const skills = [
         { name: "HTML", img: "/images/html.svg" },
@@ -47,9 +49,15 @@ function BottomSkills() {
                         alt={skill.name}
                         className="w-11 h-11 sm:w-16 sm:h-16 object-contain"
                     />
-                    <p className="py-3 font-bold text-[18px] sm:text-2xl uppercase">
+                    <motion.p
+                        className="py-3 font-bold text-[18px] sm:text-2xl uppercase"
+                        initial={{ y: -50, opacity: 0 }}       // Top থেকে start
+                        whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
                         {skill.name}
-                    </p>
+                    </motion.p>
                 </div>
             ))}
         </div>

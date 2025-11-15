@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function CartProject() {
     const projects = [
         {
@@ -53,12 +55,16 @@ function CartProject() {
 
                         <div className="flex flex-wrap gap-3.5 pt-3.5">
                             {project.tech.map((tech, i) => (
-                                <span
+                                <motion.span
                                     key={i}
                                     className="px-7 py-1.5 flex font-bold items-center justify-center rounded-full border border-purple-400 text-purple-300 text-sm"
+                                    initial={{ y: -30, opacity: 0 }}       // Top থেকে start
+                                    whileInView={{ y: 0, opacity: 1 }}     // Normal position
+                                    transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.1 }} // stagger effect
+                                    viewport={{ once: true }}
                                 >
                                     {tech}
-                                </span>
+                                </motion.span>
                             ))}
                         </div>
                     </div>
