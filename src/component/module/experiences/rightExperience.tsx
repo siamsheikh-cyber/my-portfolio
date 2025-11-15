@@ -1,4 +1,5 @@
 import { FaUserGraduate } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function RightExperience() {
     const experiences = [
@@ -17,9 +18,13 @@ function RightExperience() {
     return (
         <div className="flex flex-col px-2 sm:px-4 md:px-8 lg:px-0 justify-center items-center w-full lg:w-[50%] gap-6">
             {experiences.map((exp, index) => (
-                <div
+                <motion.div
                     key={index}
-                    className="glow-border w-full max-w-md sm:max-w-lg py-6 sm:py-7 px-4 sm:px-8 rounded-xl bg-[#11152C] shadow-lg"
+                    className="glow-border w-full max-w-md sm:max-w-lg py-6 sm:py-7 px-4 sm:px-8 rounded-xl bg-[#11152C] shadow-lg mb-6"
+                    initial={{ y: -100, opacity: 0 }}                 // Left থেকে start
+                    whileInView={{ y: 0, opacity: 1 }}               // Normal position
+                    transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.2 }} // Stagger effect
+                    viewport={{ once: true }}
                 >
                     <h3 className="text-center text-[#1DD8AD] text-sm sm:text-base md:text-lg mb-4">
                         ({exp.period})
@@ -31,7 +36,7 @@ function RightExperience() {
                             <span className="text-gray-300 text-sm sm:text-base">{exp.institute}</span>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );
